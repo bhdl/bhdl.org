@@ -25,14 +25,14 @@ Documents:
   - [Installation guide](docs/install)
   - [Getting Started](docs/getting-started): this guide presents all you need to compose your circuit through an example keyboard circuit.
   - [Component Library](docs/library): the official BHDL components library, and how to create your own library easily.
-  - [API reference](docs/API): the function APIs including
+  - [API reference](docs/api): the function APIs including
     - the primary API, `make-circuit`
     - three connection syntax, `*-` `*<` and `*=`
     - layout API
     - exporting API for KiCAD, PNG, PDF, BOM, etc.
 - Developer Documents
   - [Advanced API reference](docs/advanced): this documents some advanced and internal APIs of BHDL.
-  - [Developer and system admin guide](docs/dev)
+  - [Developer and system admin guide](docs/admin)
 - Example Notebooks:
   - [BHDL-Key](bhdl-test/BHDL-Key.ipynb): an ergonomic keyboard
   - [onebutton](bhdl-test/onebutton.ipynb): a pushbutton board: https://github.com/forrestbao/onebutton
