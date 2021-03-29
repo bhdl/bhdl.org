@@ -6,8 +6,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import ButtonLink from "../components/buttonlink"
 import Container from "../components/container"
+
+const linkPrimary =
+  "bg-yellow-500 text-black hover:bg-yellow-300 px-6 py-2 transition duration-200"
+const linkSecondary =
+  "text-yellow-500 hover:text-yellow-300 transition duration-200"
 
 function SectionA() {
   return (
@@ -21,38 +25,32 @@ function SectionA() {
             }}
           >
             <Container>
-              <h1
-                style={{
-                  textAlign: "center",
-                  margin: 0,
-                  fontSize: 45,
-                  letterSpacing: "0.01em",
-                }}
-                className="text-green-500"
-              >
-                BHDL
+              <h1 className="text-yellow-500 text-5xl pt-16 text-center">
+                Board HDL
               </h1>
-              <p
-                style={{
-                  paddingTop: 15,
-                  textAlign: "center",
-                  fontSize: 24,
-                  letterSpacing: "0.01em",
-                  fontWeight: 200,
-                }}
-              >
+              <p className="text-center text-2xl pt-8">
                 A Programming Language and System for making PCBs
               </p>
               <div className="flex justify-center items-center pt-16">
                 <div className="pl-6">
-                  <ButtonLink to="/docs/getting-started" type="primary">
+                  <Link to="/docs/getting-started" className={linkPrimary}>
                     Get Started
-                  </ButtonLink>
+                  </Link>
                 </div>
                 <div className="pl-6">
-                  <ButtonLink to="https://cloud.bhdl.org" type="secondary">
+                  <Link to="https://cloud.bhdl.org" className={linkSecondary}>
                     Try it online!
-                  </ButtonLink>
+                  </Link>
+                </div>
+                <div className="pl-6">
+                  <Link to="/docs" className={linkSecondary}>
+                    Read Docs
+                  </Link>
+                </div>
+                <div className="pl-6">
+                  <Link to="/examples" className={linkSecondary}>
+                    Browse Examples
+                  </Link>
                 </div>
               </div>
             </Container>
@@ -69,38 +67,46 @@ function SectionB() {
       <div className="flex pt-16 pb-16">
         <div className="flex flex-1 flex-col">
           <h3 className="text-gray-800 font-light mb-2 text-lg">
-            PCB as a Program
+            <Link to="/todo">PCB as a Program</Link>
           </h3>
           <div>
             <p>
               Ex cillum proident minim quis consequat et irure exercitation anim
               sunt amet voluptate ut est. Reprehenderit reprehenderit esse duis
               nisi est commodo ipsum veniam ex aute. Commodo amet consequat
-              officia qui cillum enim fugiat eu non.
+              officia qui cillum enim fugiat eu non.{" "}
+              <Link to="/todo" className="text-blue-500">
+                Learn more
+              </Link>
             </p>
           </div>
         </div>
         <div className="flex flex-1 flex-col ml-16">
           <h3 className="text-gray-800 font-light mb-2 text-lg">
-            Lucid, Expressive, Embedded
+            <Link to="/todo">Lucid, Expressive, Embedded</Link>
           </h3>
           <p>
             Officia labore culpa excepteur culpa laboris deserunt. Minim cillum
             do laborum est nisi laborum. Magna irure irure proident dolor
             proident fugiat elit ad incididunt amet. Commodo quis tempor laborum
-            aliqua cillum magna dolore aliquip culpa duis eiusmod enim duis in.
+            aliqua cillum duis eiusmod enim duis in.{" "}
+            <Link to="/todo" className="text-blue-500">
+              Learn more
+            </Link>
           </p>
         </div>
         <div className="flex flex-1 flex-col ml-16">
           <h3 className="text-gray-800 font-light mb-2 text-lg">
-            Auto-Placement &amp; Routing
+            <Link to="/todo">Auto-Placement &amp; Routing</Link>
           </h3>
           <p>
             In ut tempor consequat duis magna laboris eu nulla exercitation
             eiusmod ullamco. Irure nostrud et culpa amet occaecat. Reprehenderit
             adipisicing minim aliquip commodo dolore laboris occaecat magna
-            excepteur. Amet ipsum anim deserunt dolore sit officia do do non
-            adipisicing esse consectetur.
+            excepteur. Amet ipsum sit do do non adipisicing esse .{" "}
+            <Link to="/todo" className="text-blue-500">
+              Learn more
+            </Link>
           </p>
         </div>
       </div>

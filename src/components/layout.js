@@ -29,7 +29,7 @@ const Header = () => (
       <div className="flex items-center h-16">
         <Link
           to="/"
-          className="text-green-500 hover:text-green-400 mr-16 items-center"
+          className="text-yellow-500 hover:text-yellow-400 mr-16 items-center"
         >
           <span>BHDL</span>
         </Link>

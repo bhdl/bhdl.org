@@ -28,4 +28,4 @@ Ready to build:
 yarn build
 ```
 
-The `public` directory is ready to publish.
+The `public` directory is ready to publish. Currently it is deployed on GitHub pages, at https://github.com/lihebi/bhdl.org-dist

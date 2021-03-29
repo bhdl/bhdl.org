@@ -30,3 +30,7 @@ article h3::before {
   padding-top: 90px;
   margin-top: -45px;
 }
+
+.prose-yellow a:visited {
+  color: #78350f;
+}

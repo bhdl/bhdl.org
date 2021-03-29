@@ -9,7 +9,7 @@ export default function DocPage({ data }) {
   return (
     <Layout>
       <Container>
-        <article className="prose prose-green mt-16 pt-16">
+        <article className="prose prose-yellow mt-16 pt-16">
           <h1 className="font-bold">{doc.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: doc.tableOfContents }} />
           <div dangerouslySetInnerHTML={{ __html: doc.html }} />
