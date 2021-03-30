@@ -6,6 +6,8 @@ permalink: docs/install.html
 
 # BHDL Installation Guide
 
+Warning: we are on pre-alpha release, please expect breaking changes in APIs.
+
 ## Installation
 
 Step 1: install [racket](https://racket-lang.org/):
@@ -15,11 +17,11 @@ apt install racket
 ```
 
 IMPORTANT: racket v7.8 seems to be broken! The cc-find will return negative values. That's apparently a bug of either racket v7.8 or the bundled pict library. Use v7.7 instead. Links to the download pages:
+
 - [all versions](https://download.racket-lang.org/all-versions.html)
 - [v7.7](https://download.racket-lang.org/racket-v7.7.html)
 
 Step 2: Install the BHDL directly as a racket package:
-
 
 ```
 raco pkg install git://github.com/lihebi/bhdl/?path=bhdl-lib
@@ -39,8 +41,8 @@ git clone --recursive https://github.com/lihebi/bhdl-footprints
 export BHDL_LIBRARY_PATH=/path/to/bhdl-footprints
 ```
 
-
 ## Running via the Jupyter Kernel
+
 In general, you can run racket programs via command line, editor plugins, IDEs. We are not covering them here. Instead, we recommand run the program via jupyter notebook. To set it up, first install jupyter:
 
 ```
@@ -68,12 +70,12 @@ jupyter notebook
 You might want to open the example notebooks:
 
 <!-- TODO rename fitboard to BHDL-Key -->
+
 - [BHDL-Key](bhdl-test/fitboard.ipynb): an ergonomic keyboard
 - [onebutton](bhdl-test/onebutton.ipynb): a pushbutton board: https://github.com/forrestbao/onebutton
 - [Arduino Spreadboard](bhdl-test/spreadboard.ipynb): an multi-dock for different form-factor Arduinos
 
 One caveat to notice: the iRacket kernel seems to have problem when "restarting the kernel". The walk-around is to "shutdown the kernel" and "start it again".
-
 
 ## (optional) placement engine
 
@@ -103,9 +105,9 @@ Note that you only need the placement engine when you use the `circuit-export` A
 ```
 
 Some future features to notice:
+
 - We will be adding management of placement engine directly in BHDL code
 - currently the placement engine uses GPU. We'll be making it compatible with CPU only setup, but that might be substantially slower than on GPU machines.
-
 
 ## (optional) freerouting
 
