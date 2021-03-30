@@ -25,12 +25,13 @@ function Nav() {
       >
         Examples
       </Link>
-      <Link
-        to="https://cloud.bhdl.org"
+      <a
+        href="https://cloud.bhdl.org"
+        target="_blank"
         className="flex px-3 hover:bg-gray-900 py-1 transition"
       >
         Cloud
-      </Link>
+      </a>
       <Link
         to="/publication"
         className="flex px-3 hover:bg-gray-900 py-1 transition"
@@ -58,7 +59,7 @@ const Header = () => (
           target="_blank"
           className="flex px-3 hover:bg-gray-900 py-1 transition "
         >
-          Source
+          GitHub
         </a>
       </div>
     </Container>
@@ -67,8 +68,9 @@ const Header = () => (
 
 function Footer() {
   return (
-    <footer className="w-full bg-gray-800 text-white py-16">
+    <footer className="w-full bg-gray-800 text-white py-10">
       <Container>
+        <div className="ml-6 mb-6">Copyright © 2021 BHDL Team.</div>
         <div className="w-full flex flex-wrap justify-center">
           <div className="flex flex-1 flex-col ml-6">
             <h3 className="text-white font-bold mb-2 text-lg">Docs</h3>
