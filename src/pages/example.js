@@ -17,7 +17,7 @@ const linkStyle =
 function ExampleBlock({ name, img, link, children }) {
   console.log(img)
   return (
-    <div className="max-w-sm mx-auto bg-white p-3 rounded-xl shadow-md overflow-hidden">
+    <div className="sm:max-w-lg md:max-w-md mx-auto bg-white p-3 rounded-xl shadow-md overflow-hidden">
       <div className="">
         <div className="">{img}</div>
         <div className="p-8">

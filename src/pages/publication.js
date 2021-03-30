@@ -36,11 +36,27 @@ export default function PublicationPage(props) {
                 </h1>
                 <ul className="flex flex-col justify-center">
                   <li className="flex m-3">
+                    <p>
+                      Hebi Li, Youbiao He, Qi Xiao, Jin Tian and Forrest Sheng
+                      Bao. "BHDL: A Lucid, Expressive, and Embedded Programming
+                      Language and System for PCB Designs" 2021 58th ACM/IEEE
+                      Design Automation Conference (DAC). IEEE, 2021.
+                    </p>
+                  </li>
+                  <li className="flex m-3">
+                    <p>
+                      He, Youbiao, and Forrest Sheng Bao. "Circuit routing using
+                      monte carlo tree search and deep neural networks." arXiv
+                      preprint arXiv:2006.13607 (2020).
+                    </p>
+                  </li>
+                  {/* 
+                  <li className="flex m-3">
                     <pre>
                       {`
 @inproceedings{li2021bhdl,
-    title={BHDL: A Lucid, Expressive, and Embedded Programming Language and System for PCB Designs},
-    author={Hebi Li, Youbiao He, Qi Xiao, Jin Tian and Forrest Sheng Bao},
+    title={},
+    author={},
     booktitle={2021 58th ACM/IEEE Design Automation Conference (DAC)},
     pages={999},
     year={2021},
@@ -59,7 +75,7 @@ export default function PublicationPage(props) {
     year={2020}
 }`}
                     </pre>
-                  </li>
+                  </li> */}
                 </ul>
               </Container>
             </div>

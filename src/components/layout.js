@@ -12,7 +12,7 @@ import Container from "../components/container"
 
 function Nav() {
   return (
-    <nav className="flex flex-1 no-scrollbar overflow-x-auto h-full items-center">
+    <nav className="flex flex-auto border-l pl-3 border-gray-700 no-scrollbar overflow-x-auto h-full items-center">
       <Link to="/docs" className="flex px-3 hover:bg-gray-900 py-1 transition">
         Docs
       </Link>
@@ -39,7 +39,7 @@ function Nav() {
 const Header = () => (
   <header className="bg-gray-800 text-white fixed w-full z-10">
     <Container>
-      <div className="flex items-center h-16">
+      <div className="flex items-center h-12">
         <Link
           to="/"
           className="text-yellow-500 hover:text-yellow-400 mr-8 lg:mr-16 items-center"
@@ -48,20 +48,22 @@ const Header = () => (
         </Link>
 
         <Nav />
-        <a
-          href="https://cloud.bhdl.org"
-          target="_blank"
-          className="flex px-3 hover:bg-gray-900 py-1 transition"
-        >
-          Cloud
-        </a>
-        <a
-          href="https://github.com/lihebi/bhdl"
-          target="_blank"
-          className="flex px-3 hover:bg-gray-900 py-1 transition "
-        >
-          GitHub
-        </a>
+        <div className="ml-2 px-3 border-l border-gray-600 flex flex flex-row-reverse items-center no-scrollbar overflow-x-auto h-full">
+          <a
+            href="https://cloud.bhdl.org"
+            target="_blank"
+            className="flex px-3 hover:bg-gray-900 py-1 transition"
+          >
+            Cloud
+          </a>
+          <a
+            href="https://github.com/lihebi/bhdl"
+            target="_blank"
+            className="flex px-3 hover:bg-gray-900 py-1 transition "
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </Container>
   </header>
