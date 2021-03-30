@@ -25,13 +25,7 @@ function Nav() {
       >
         Examples
       </Link>
-      <a
-        href="https://cloud.bhdl.org"
-        target="_blank"
-        className="flex px-3 hover:bg-gray-900 py-1 transition"
-      >
-        Cloud
-      </a>
+
       <Link
         to="/publication"
         className="flex px-3 hover:bg-gray-900 py-1 transition"
@@ -54,6 +48,13 @@ const Header = () => (
         </Link>
 
         <Nav />
+        <a
+          href="https://cloud.bhdl.org"
+          target="_blank"
+          className="flex px-3 hover:bg-gray-900 py-1 transition"
+        >
+          Cloud
+        </a>
         <a
           href="https://github.com/lihebi/bhdl"
           target="_blank"
