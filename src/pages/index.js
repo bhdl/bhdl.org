@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 import Container from "../components/container"
 
 const linkPrimary =
-  "bg-yellow-500 text-black hover:bg-yellow-300 px-6 py-2 transition duration-200"
+  "bg-yellow-400 text-black hover:bg-yellow-300 px-6 py-2 transition duration-200"
 const linkSecondary =
   "text-yellow-500 hover:text-yellow-300 transition duration-200"
 
@@ -31,24 +31,24 @@ function SectionA() {
               <p className="text-center text-2xl pt-8">
                 A Programming Language and System for making PCBs
               </p>
-              <div className="flex justify-center items-center pt-16">
-                <div className="pl-6">
-                  <Link to="/docs/getting-started" className={linkPrimary}>
+              <div className="flex flex-wrap justify-center items-center pt-16">
+                <div className="pl-6 pt-3">
+                  <Link to="/docs/getting-started" className={linkSecondary}>
                     Get Started
                   </Link>
                 </div>
-                <div className="pl-6">
+                <div className="pl-6 pt-3">
                   <Link to="https://cloud.bhdl.org" className={linkSecondary}>
                     Try it online!
                   </Link>
                 </div>
-                <div className="pl-6">
+                <div className="pl-6 pt-3">
                   <Link to="/docs" className={linkSecondary}>
                     Read Docs
                   </Link>
                 </div>
-                <div className="pl-6">
-                  <Link to="/examples" className={linkSecondary}>
+                <div className="pl-6 pt-3">
+                  <Link to="/example" className={linkSecondary}>
                     Browse Examples
                   </Link>
                 </div>
@@ -62,10 +62,11 @@ function SectionA() {
 }
 
 function SectionB() {
+  const boxStyle = "flex flex-1 flex-col mt-6 bg-gray-100 shadow-lg p-5"
   return (
     <Container>
-      <div className="flex pt-16 pb-16">
-        <div className="flex flex-1 flex-col">
+      <div className="flex pt-16 pb-16 flex-col md:flex-row">
+        <div className={boxStyle}>
           <h3 className="text-gray-800 font-light mb-2 text-lg">
             <Link to="/todo">PCB as a Program</Link>
           </h3>
@@ -81,7 +82,7 @@ function SectionB() {
             </p>
           </div>
         </div>
-        <div className="flex flex-1 flex-col ml-16">
+        <div className={boxStyle + " md:ml-10"}>
           <h3 className="text-gray-800 font-light mb-2 text-lg">
             <Link to="/todo">Lucid, Expressive, Embedded</Link>
           </h3>
@@ -95,7 +96,7 @@ function SectionB() {
             </Link>
           </p>
         </div>
-        <div className="flex flex-1 flex-col ml-16">
+        <div className={boxStyle + " md:ml-10"}>
           <h3 className="text-gray-800 font-light mb-2 text-lg">
             <Link to="/todo">Auto-Placement &amp; Routing</Link>
           </h3>

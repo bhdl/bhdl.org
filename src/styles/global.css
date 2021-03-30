@@ -34,3 +34,12 @@ article h3::before {
 .prose-yellow a:visited {
   color: #78350f;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

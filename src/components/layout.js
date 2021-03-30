@@ -12,12 +12,30 @@ import Container from "../components/container"
 
 function Nav() {
   return (
-    <nav className="flex flex-1 h-full items-center">
+    <nav className="flex flex-1 no-scrollbar overflow-x-auto h-full items-center">
       <Link to="/docs" className="flex px-3 hover:bg-gray-900 py-1 transition">
         Docs
       </Link>
       <Link to="/blog" className="flex px-3 hover:bg-gray-900 py-1 transition">
         Blog
+      </Link>
+      <Link
+        to="/example"
+        className="flex px-3 hover:bg-gray-900 py-1 transition"
+      >
+        Examples
+      </Link>
+      <Link
+        to="https://cloud.bhdl.org"
+        className="flex px-3 hover:bg-gray-900 py-1 transition"
+      >
+        Cloud
+      </Link>
+      <Link
+        to="/publication"
+        className="flex px-3 hover:bg-gray-900 py-1 transition"
+      >
+        Publications
       </Link>
     </nav>
   )
@@ -29,12 +47,19 @@ const Header = () => (
       <div className="flex items-center h-16">
         <Link
           to="/"
-          className="text-yellow-500 hover:text-yellow-400 mr-16 items-center"
+          className="text-yellow-500 hover:text-yellow-400 mr-8 lg:mr-16 items-center"
         >
           <span>BHDL</span>
         </Link>
 
         <Nav />
+        <a
+          href="https://github.com/lihebi/bhdl"
+          target="_blank"
+          className="flex px-3 hover:bg-gray-900 py-1 transition "
+        >
+          Source
+        </a>
       </div>
     </Container>
   </header>
@@ -44,7 +69,7 @@ function Footer() {
   return (
     <footer className="w-full bg-gray-800 text-white py-16">
       <Container>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex flex-wrap justify-center">
           <div className="flex flex-1 flex-col ml-6">
             <h3 className="text-white font-bold mb-2 text-lg">Docs</h3>
             <p>Getting Started</p>
