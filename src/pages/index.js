@@ -37,9 +37,13 @@ function SectionA() {
                   </Link>
                 </div>
                 <div className="pl-6 pt-3">
-                  <Link to="https://cloud.bhdl.org" className={linkSecondary}>
+                  <a
+                    href="https://cloud.bhdl.org"
+                    target="_blank"
+                    className={linkSecondary}
+                  >
                     Try it online!
-                  </Link>
+                  </a>
                 </div>
                 <div className="pl-6 pt-3">
                   <Link to="/docs" className={linkSecondary}>
@@ -49,6 +53,11 @@ function SectionA() {
                 <div className="pl-6 pt-3">
                   <Link to="/example" className={linkSecondary}>
                     Browse Examples
+                  </Link>
+                </div>
+                <div className="pl-6 pt-3">
+                  <Link to="/docs/questionare" className={linkSecondary}>
+                    Questionare
                   </Link>
                 </div>
               </div>

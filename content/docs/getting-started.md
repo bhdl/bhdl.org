@@ -4,6 +4,8 @@
 
 ![A quick taste](../../src/images/taste.png)
 
+![Modular designs](../../src/images/module.png)
+
 ## Tutorial Outline
 
 The programming with BHDL consists of several steps:

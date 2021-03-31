@@ -1,6 +1,20 @@
 # BHDL API Reference
 
-## grow your circuit with`make-circuit`
+## A (formal) overview of syntax
+
+### The syntax
+
+![syntax](../../src/images/syntax.png)
+
+### The semantics
+
+![wire](../../src/images/wire.png)
+
+---
+
+![semantics](../../src/images/semantics.png)
+
+## Grow your circuit with`make-circuit`
 
 This syntax makes it easy to define a composite. The syntax is:
 
