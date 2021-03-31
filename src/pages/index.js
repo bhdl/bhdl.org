@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -65,6 +64,14 @@ function SectionB() {
   const boxStyle = "flex flex-1 flex-col mt-6 bg-gray-100 shadow-lg p-5"
   return (
     <Container>
+      <div className="flex w-full justify-center pt-6">
+        <StaticImage
+          className="max-w-lg	 h-full object-cover"
+          src="../images/workflow.png"
+          alt="A dinosaur"
+        />
+      </div>
+
       <div className="flex pt-16 pb-16 flex-col md:flex-row">
         <div className={boxStyle}>
           <h3 className="text-gray-800 font-light mb-2 text-lg">
@@ -111,6 +118,74 @@ function SectionB() {
           </p>
         </div>
       </div>
+
+      {/* <div className="flex w-full justify-center pt-6 pb-6">
+        <StaticImage
+          className="w-full h-full object-cover"
+          src="../images/taste.png"
+          alt="A dinosaur"
+        />
+      </div> */}
+
+      <div className="flex w-full justify-center pt-6 pb-10">
+        <StaticImage
+          className="w-full h-full object-cover"
+          src="../images/jupyter.png"
+          alt="A dinosaur"
+        />
+      </div>
+    </Container>
+  )
+}
+
+function SectionC() {
+  const boxStyle = "flex flex-1 flex-col mt-6 bg-gray-100 shadow-lg p-5"
+  return (
+    <Container>
+      <div className="flex flex-col md:flex-row pt-16 pb-16">
+        <div className={boxStyle}>
+          <h3 className="text-gray-800 font-light mb-2 text-lg">
+            <Link to="/todo">Lucid, Expressive, Embedded</Link>
+          </h3>
+          <div>
+            <StaticImage
+              className="w-full h-full object-cover"
+              src="../images/syntax.png"
+              alt="A dinosaur"
+            />
+          </div>
+        </div>
+        <div className={boxStyle + " md:ml-10"}>
+          <h3 className="text-gray-800 font-light mb-2 text-lg">
+            <Link to="/todo">Jupyter Development Environment</Link>
+          </h3>
+          <StaticImage
+            className="w-full h-full object-cover"
+            src="../images/jupyter.png"
+            alt="A dinosaur"
+          />
+        </div>
+        <div className={boxStyle + " md:ml-10"}>
+          <h3 className="text-gray-800 font-light mb-2 text-lg">
+            <Link to="/todo">Wire Syntax</Link>
+          </h3>
+          <StaticImage
+            className="w-full h-full object-cover"
+            src="../images/wire.png"
+            alt="A dinosaur"
+          />
+        </div>
+        <div className={boxStyle + " md:ml-10"}>
+          <h3 className="text-gray-800 font-light mb-2 text-lg">
+            <Link to="/todo">workflow</Link>
+          </h3>
+          <StaticImage
+            className="w-full h-full object-cover"
+            src="../images/workflow.png"
+            alt="A dinosaur"
+          />
+        </div>
+      </div>
     </Container>
   )
 }
@@ -120,6 +195,7 @@ const IndexPage = props => (
     {/* <SEO title="Home" /> */}
     <SectionA />
     <SectionB />
+    {/* <SectionC /> */}
   </Layout>
 )
 

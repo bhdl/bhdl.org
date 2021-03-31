@@ -1,5 +1,11 @@
 # BHDL Getting Started Guide
 
+<!-- ## A quick taste of BHDL -->
+
+![A quick taste](../../src/images/taste.png)
+
+## Tutorial Outline
+
 The programming with BHDL consists of several steps:
 
 1. Component Selection. The information needed are:

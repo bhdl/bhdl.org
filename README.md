@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  BHDL.org source
+  BHDL.org website source code.
 </h1>
 
 This site is developed using gatsby.
@@ -22,10 +22,10 @@ To run development server:
 yarn develop
 ```
 
-Ready to build:
+Ready to build & deploy:
 
 ```
-yarn build
+yarn deploy
 ```
 
-The `public` directory is ready to publish. Currently it is deployed on GitHub pages, at https://github.com/lihebi/bhdl.org-dist
+This will build into `public` directory and deploy to `gh-pages` branch of this repository.
