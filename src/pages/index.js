@@ -32,7 +32,7 @@ function SectionA() {
               </p>
               <div className="flex flex-wrap justify-center items-center pt-16">
                 <div className="pl-6 pt-3">
-                  <Link to="/docs/getting-started" className={linkSecondary}>
+                  <Link to="/docs/getting-started" className={linkPrimary}>
                     Get Started
                   </Link>
                 </div>
