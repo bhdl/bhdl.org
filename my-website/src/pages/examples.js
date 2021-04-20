@@ -62,11 +62,12 @@ function ExampleBlock({ image, title, url, text }) {
 }
 
 export default function Examples() {
+  const { siteConfig } = useDocusaurusContext()
   return (
     <ChakraProvider>
       <Layout
-      //   title={`HOME - ${siteConfig.title}`}
-      //   description="A Programming Language and System for making PCBs"
+        title={`Examples - ${siteConfig.title}`}
+        description={`${siteConfig.tagline}`}
       >
         <Box
           bgColor="var(--ifm-hero-background-color)"
