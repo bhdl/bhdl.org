@@ -78,22 +78,22 @@ export default function Examples() {
           </Center>
           <Flex wrap="wrap" justify="center">
             <ExampleBlock
-              image="../../static/img/images/assets/BHDL-Key-pcbnew.png"
+              image="../../static/img/BHDL-Key-pcbnew.png"
               title="BHDL-Key"
               url="https://nbviewer.jupyter.org/github/lihebi/bhdl.org/blob/master/notebooks/BHDL-Key.ipynb"
             ></ExampleBlock>
             <ExampleBlock
-              image="../../static/img/images/assets/threebutton.png"
+              image="../../static/img/threebutton.png"
               title="Three Buttons"
               url="https://nbviewer.jupyter.org/github/lihebi/bhdl.org/blob/master/notebooks/onebutton.ipynb"
             ></ExampleBlock>
             <ExampleBlock
-              image="../../static/img/images/assets/spreadboard-pcbnew.png"
+              image="../../static/img/spreadboard-pcbnew.png"
               title="Arduino SpreadBoard"
               url="https://nbviewer.jupyter.org/github/lihebi/bhdl.org/blob/master/notebooks/spreadboard.ipynb"
             ></ExampleBlock>
             <ExampleBlock
-              image="../../static/img/images/assets/demo-board-pcbnew.png"
+              image="../../static/img/demo-board-pcbnew.png"
               title="Key Matrix"
               url="https://nbviewer.jupyter.org/github/lihebi/bhdl.org/blob/master/notebooks/demo-board.ipynb"
             ></ExampleBlock>

@@ -1,31 +1,33 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  BHDL.org website source code.
-</h1>
+# Website
 
-This site is developed using gatsby.
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-To install dependances:
+## Installation
 
-```
-yarn
+```console
+yarn install
 ```
 
-To run development server:
+## Local Development
 
-```
-yarn develop
-```
-
-Ready to build & deploy:
-
-```
-yarn deploy
+```console
+yarn start
 ```
 
-This will build into `public` directory and deploy to `gh-pages` branch of this repository.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```console
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

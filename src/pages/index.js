@@ -1,211 +1,154 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
+import clsx from "clsx"
+import Layout from "@theme/Layout"
+import Link from "@docusaurus/Link"
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
+import styles from "./index.module.css"
+import HomepageFeatures from "../components/HomepageFeatures"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import {
+  ChakraProvider,
+  Box,
+  Flex,
+  Center,
+  Heading,
+  Text,
+  Alert,
+  AlertIcon,
+  Image,
+} from "@chakra-ui/react"
 
-import Container from "../components/container"
-
-const linkPrimary =
-  "bg-yellow-400 text-black hover:bg-yellow-300 px-6 py-2 transition duration-200"
-const linkSecondary =
-  "text-yellow-500 hover:text-yellow-300 transition duration-200"
-
-function SectionA() {
+function HomepageHeader() {
+  const { siteConfig } = useDocusaurusContext()
   return (
-    <div className="w-full">
-      <header className="text-white bg-gray-700">
-        <div className="pt-16 pb-16">
-          <div
-            style={{
-              // Content should be above absolutely-positioned hero image
-              position: "relative",
-            }}
+    <Box
+      // className={clsx("hero hero--primary", styles.heroBanner)}
+      className={styles.heroBanner}
+      bgGradient="linear(to-l, #74ebd5 0%, #ACB6E5 50%)"
+    >
+      <div className="container">
+        {/* <h1 className="hero__title">{siteConfig.title}</h1> */}
+        {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
+        <Heading as="h1" mb={10} size="4xl">
+          {/* {siteConfig.title} */}
+          Board HDL
+        </Heading>
+        <Text fontSize="xl">{siteConfig.tagline}</Text>
+
+        <Center>
+          <Flex mt={10}>
+            <Box mr={10}>
+              <Link
+                className="button button--secondary button--lg"
+                to="/docs/intro"
+              >
+                Get Started
+              </Link>
+            </Box>
+            <Box>
+              <Link
+                className="button button--secondary button--lg"
+                to="/examples"
+              >
+                Browse Examples
+              </Link>
+            </Box>
+          </Flex>
+        </Center>
+
+        {/* <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro"
           >
-            <Container>
-              <h1 className="text-yellow-500 text-5xl pt-16 text-center">
-                Board HDL
-              </h1>
-              <p className="text-center text-2xl pt-8">
-                A Programming Language and System for making PCBs
-              </p>
-              <div className="flex flex-wrap justify-center items-center pt-16">
-                <div className="pl-6 pt-3">
-                  <Link to="/docs/getting-started" className={linkPrimary}>
-                    Get Started
-                  </Link>
-                </div>
-                <div className="pl-6 pt-3">
-                  <a
-                    href="https://cloud.bhdl.org"
-                    target="_blank"
-                    className={linkSecondary}
-                  >
-                    Try it online!
-                  </a>
-                </div>
-                <div className="pl-6 pt-3">
-                  <Link to="/docs" className={linkSecondary}>
-                    Read Docs
-                  </Link>
-                </div>
-                <div className="pl-6 pt-3">
-                  <Link to="/example" className={linkSecondary}>
-                    Browse Examples
-                  </Link>
-                </div>
-                <div className="pl-6 pt-3">
-                  <Link to="/docs/questionare" className={linkSecondary}>
-                    Questionare
-                  </Link>
-                </div>
-              </div>
-            </Container>
-          </div>
-        </div>
-      </header>
-    </div>
+            Read the Docs
+          </Link>
+        </div> */}
+      </div>
+    </Box>
   )
 }
 
-function SectionB() {
-  const boxStyle = "flex flex-1 flex-col mt-6 bg-gray-100 shadow-lg p-5"
+function Features() {
   return (
-    <Container>
-      <div className="flex w-full justify-center pt-6">
-        <StaticImage
-          className="max-w-lg	 h-full object-cover"
-          src="../images/workflow.png"
-          alt="A dinosaur"
-        />
-      </div>
-
-      <div className="flex pt-16 pb-16 flex-col md:flex-row">
-        <div className={boxStyle}>
-          <h3 className="text-gray-800 font-light mb-2 text-lg">
-            <Link to="/todo">PCB as a Program</Link>
-          </h3>
-          <div>
-            <p>
-              Ex cillum proident minim quis consequat et irure exercitation anim
-              sunt amet voluptate ut est. Reprehenderit reprehenderit esse duis
-              nisi est commodo ipsum veniam ex aute. Commodo amet consequat
-              officia qui cillum enim fugiat eu non.{" "}
-              <Link to="/todo" className="text-blue-500">
-                Learn more
-              </Link>
-            </p>
-          </div>
-        </div>
-        <div className={boxStyle + " md:ml-10"}>
-          <h3 className="text-gray-800 font-light mb-2 text-lg">
-            <Link to="/todo">Lucid, Expressive, Embedded</Link>
-          </h3>
-          <p>
+    <Box>
+      <Flex mb={10} mt={10}>
+        <Flex bgColor="gray.100" p={5} boxShadow="xl" direction="column" mx={5}>
+          <Heading size="md" mb={2} fontWeight="lighter">
+            PCB as a Program
+          </Heading>
+          <Text>
+            Ex cillum proident minim quis consequat et irure exercitation anim
+            sunt amet voluptate ut est. Reprehenderit reprehenderit esse duis
+            nisi est commodo ipsum veniam ex aute. Commodo amet consequat
+            officia qui cillum enim fugiat eu non.
+          </Text>
+        </Flex>
+        <Flex bgColor="gray.100" p={5} boxShadow="xl" direction="column">
+          <Heading size="md" mb={2} fontWeight="lighter">
+            Lucid, Expressive, Embedded
+          </Heading>
+          <Text>
             Officia labore culpa excepteur culpa laboris deserunt. Minim cillum
             do laborum est nisi laborum. Magna irure irure proident dolor
             proident fugiat elit ad incididunt amet. Commodo quis tempor laborum
-            aliqua cillum duis eiusmod enim duis in.{" "}
-            <Link to="/todo" className="text-blue-500">
-              Learn more
-            </Link>
-          </p>
-        </div>
-        <div className={boxStyle + " md:ml-10"}>
-          <h3 className="text-gray-800 font-light mb-2 text-lg">
-            <Link to="/todo">Auto-Placement &amp; Routing</Link>
-          </h3>
-          <p>
+            aliqua cillum duis eiusmod enim duis in.
+          </Text>
+        </Flex>
+        <Flex bgColor="gray.100" p={5} boxShadow="xl" direction="column" mx={5}>
+          <Heading size="md" mb={2} fontWeight="lighter">
+            Auto-Placement &amp; Routing
+          </Heading>
+          <Text>
             In ut tempor consequat duis magna laboris eu nulla exercitation
             eiusmod ullamco. Irure nostrud et culpa amet occaecat. Reprehenderit
             adipisicing minim aliquip commodo dolore laboris occaecat magna
-            excepteur. Amet ipsum sit do do non adipisicing esse .{" "}
-            <Link to="/todo" className="text-blue-500">
-              Learn more
-            </Link>
-          </p>
-        </div>
-      </div>
-
-      {/* <div className="flex w-full justify-center pt-6 pb-6">
-        <StaticImage
-          className="w-full h-full object-cover"
-          src="../images/taste.png"
-          alt="A dinosaur"
-        />
-      </div> */}
-
-      <div className="flex w-full justify-center pt-6 pb-10">
-        <StaticImage
-          className="w-full h-full object-cover"
-          src="../images/jupyter.png"
-          alt="A dinosaur"
-        />
-      </div>
-    </Container>
+            excepteur. Amet ipsum sit do do non adipisicing esse
+          </Text>
+        </Flex>
+      </Flex>
+    </Box>
   )
 }
 
-function SectionC() {
-  const boxStyle = "flex flex-1 flex-col mt-6 bg-gray-100 shadow-lg p-5"
+export default function Home() {
+  const { siteConfig } = useDocusaurusContext()
   return (
-    <Container>
-      <div className="flex flex-col md:flex-row pt-16 pb-16">
-        <div className={boxStyle}>
-          <h3 className="text-gray-800 font-light mb-2 text-lg">
-            <Link to="/todo">Lucid, Expressive, Embedded</Link>
-          </h3>
-          <div>
-            <StaticImage
-              className="w-full h-full object-cover"
-              src="../images/syntax.png"
-              alt="A dinosaur"
-            />
-          </div>
-        </div>
-        <div className={boxStyle + " md:ml-10"}>
-          <h3 className="text-gray-800 font-light mb-2 text-lg">
-            <Link to="/todo">Jupyter Development Environment</Link>
-          </h3>
-          <StaticImage
-            className="w-full h-full object-cover"
-            src="../images/jupyter.png"
-            alt="A dinosaur"
-          />
-        </div>
-        <div className={boxStyle + " md:ml-10"}>
-          <h3 className="text-gray-800 font-light mb-2 text-lg">
-            <Link to="/todo">Wire Syntax</Link>
-          </h3>
-          <StaticImage
-            className="w-full h-full object-cover"
-            src="../images/wire.png"
-            alt="A dinosaur"
-          />
-        </div>
-        <div className={boxStyle + " md:ml-10"}>
-          <h3 className="text-gray-800 font-light mb-2 text-lg">
-            <Link to="/todo">workflow</Link>
-          </h3>
-          <StaticImage
-            className="w-full h-full object-cover"
-            src="../images/workflow.png"
-            alt="A dinosaur"
-          />
-        </div>
-      </div>
-    </Container>
+    <ChakraProvider>
+      <Layout
+        title={`HOME - ${siteConfig.title}`}
+        description="A Programming Language and System for making PCBs"
+      >
+        <Box bgColor="var(--ifm-hero-background-color)">
+          <HomepageHeader />
+          <Center my={5}>
+            <Alert maxW="xl" status="warning">
+              <AlertIcon />
+              This site is under construction, please check back later (soon!)
+            </Alert>
+          </Center>
+
+          <main>
+            <Box>
+              <Center>
+                <Image src="../../static/img/workflow.png" alt="alt" w="lg" />
+              </Center>
+            </Box>
+            <Features></Features>
+            <Box>
+              <Center>
+                <Image
+                  src="../../static/img/jupyter.png"
+                  alt="jupyter"
+                  w={0.9}
+                  mb={10}
+                />
+              </Center>
+            </Box>
+            {/* <HomepageFeatures /> */}
+          </main>
+        </Box>
+      </Layout>
+    </ChakraProvider>
   )
 }
-
-const IndexPage = props => (
-  <Layout location={props.location}>
-    {/* <SEO title="Home" /> */}
-    <SectionA />
-    <SectionB />
-    {/* <SectionC /> */}
-  </Layout>
-)
-
-export default IndexPage
