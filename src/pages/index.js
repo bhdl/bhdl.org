@@ -131,18 +131,13 @@ export default function Home() {
           <main>
             <Box>
               <Center>
-                <Image src="../../static/img/workflow.png" alt="alt" w="lg" />
+                <Image src="/img/workflow.png" alt="alt" w="lg" />
               </Center>
             </Box>
             <Features></Features>
             <Box>
               <Center>
-                <Image
-                  src="../../static/img/jupyter.png"
-                  alt="jupyter"
-                  w={0.9}
-                  mb={10}
-                />
+                <Image src="/img/jupyter.png" alt="jupyter" w={0.9} mb={10} />
               </Center>
             </Box>
             {/* <HomepageFeatures /> */}

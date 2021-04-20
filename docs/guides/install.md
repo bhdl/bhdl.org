@@ -61,13 +61,13 @@ cd /path/to/bhdl-test
 jupyter notebook
 ```
 
-You might want to open the example notebooks:
+You might want to open the example notebooks at https://bhdl.org/examples
 
 <!-- TODO rename fitboard to BHDL-Key -->
 
-- [BHDL-Key](bhdl-test/fitboard.ipynb): an ergonomic keyboard
+<!-- - [BHDL-Key](bhdl-test/fitboard.ipynb): an ergonomic keyboard
 - [onebutton](bhdl-test/onebutton.ipynb): a pushbutton board: https://github.com/forrestbao/onebutton
-- [Arduino Spreadboard](bhdl-test/spreadboard.ipynb): an multi-dock for different form-factor Arduinos
+- [Arduino Spreadboard](bhdl-test/spreadboard.ipynb): an multi-dock for different form-factor Arduinos -->
 
 One caveat to notice: the iRacket kernel seems to have problem when "restarting the kernel". The walk-around is to "shutdown the kernel" and "start it again".
 
