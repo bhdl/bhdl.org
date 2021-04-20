@@ -25,6 +25,13 @@ module.exports = {
           label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
+        { to: "/examples", label: "Examples", position: "left" },
+        { to: "/publication", label: "Publications", position: "left" },
+        {
+          href: "https://cloud.bhdl.org",
+          label: "Cloud",
+          position: "right",
+        },
         {
           href: "https://github.com/bhdl",
           label: "GitHub",
