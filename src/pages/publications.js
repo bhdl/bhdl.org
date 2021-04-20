@@ -31,7 +31,11 @@ export default function Publications() {
               <Heading>Publications</Heading>
             </Center>
             <Center mb={10}>
-              <Flex justify="center" direction="column" maxW="3xl">
+              <Flex
+                justify="center"
+                direction="column"
+                maxW={["sm", "lg", "2xl"]}
+              >
                 <Text my={3}>
                   Hebi Li, Youbiao He, Qi Xiao, Jin Tian and Forrest Sheng Bao.
                   "BHDL: A Lucid, Expressive, and Embedded Programming Language

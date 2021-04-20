@@ -65,13 +65,13 @@ export default function Examples() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <ChakraProvider>
-      <Layout
-        title={`Examples - ${siteConfig.title}`}
-        description={`${siteConfig.tagline}`}
+      <Box
+        bgColor="var(--ifm-hero-background-color)"
+        color="var(--ifm-hero-text-color)"
       >
-        <Box
-          bgColor="var(--ifm-hero-background-color)"
-          color="var(--ifm-hero-text-color)"
+        <Layout
+          title={`Examples - ${siteConfig.title}`}
+          description={`${siteConfig.tagline}`}
         >
           <Center mb={10} pt={10}>
             <Heading>Examples</Heading>
@@ -98,8 +98,8 @@ export default function Examples() {
               url="https://nbviewer.jupyter.org/github/lihebi/bhdl.org/blob/master/notebooks/demo-board.ipynb"
             ></ExampleBlock>
           </Flex>
-        </Box>
-      </Layout>
+        </Layout>
+      </Box>
     </ChakraProvider>
   )
 }
