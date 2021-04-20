@@ -12,6 +12,9 @@ module.exports = {
   projectName: "bhdl.org", // Usually your repo name.
   themeConfig: {
     hideableSidebar: true,
+    gtag: {
+      trackingID: "G-HC9ZP6PH1G",
+    },
     navbar: {
       // title: "BHDL.org",
       logo: {
