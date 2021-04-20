@@ -11,6 +11,7 @@ module.exports = {
   organizationName: "bhdl", // Usually your GitHub org/user name.
   projectName: "bhdl.org", // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       // title: "BHDL.org",
       logo: {
