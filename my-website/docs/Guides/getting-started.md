@@ -1,10 +1,13 @@
-# BHDL Getting Started Guide
+---
+---
+
+# Getting Started
 
 <!-- ## A quick taste of BHDL -->
 
-![A quick taste](../../src/images/taste.png)
+![A quick taste](../../../src/images/taste.png)
 
-![Modular designs](../../src/images/module.png)
+![Modular designs](../../../src/images/module.png)
 
 ## Tutorial Outline
 
@@ -21,7 +24,7 @@ The programming with BHDL consists of several steps:
 
 In this guide, we will go over these steps using a simple keyboard example. We will assume you have a jupyter notebook opened with IRacket kernel. Please refer to the setup documents if you need to setup one, or use our online server.
 
-![keyboard-3D](../../src/images/assets/demo-board-keyboard-3D.png)
+![keyboard-3D](../../../src/images/assets/demo-board-keyboard-3D.png)
 
 ## Setting up
 
@@ -104,7 +107,7 @@ We note several points here:
 
 The end result of the key matrix module looks like this:
 
-![matrix-image](../../src/images/assets/demo-board-matrix.png)
+![matrix-image](../../../src/images/assets/demo-board-matrix.png)
 
 ## The MCU board
 
@@ -215,7 +218,7 @@ Finally, we select some GPIO pins for row and column scanning the matrix:
 
 The end result would looks like this:
 
-![mcu-image](../../src/images/assets/demo-board-mcu.png)
+![mcu-image](../../../src/images/assets/demo-board-mcu.png)
 
 ## Connecting the MCU module and Matrix Module
 
@@ -243,7 +246,7 @@ And we export the keyboard to KiCAD, PNG, BOM:
 
 The keyboard looks like this:
 
-![keyboard-img](../../src/images/assets/demo-board-keyboard.png)
+![keyboard-img](../../../src/images/assets/demo-board-keyboard.png)
 
 The BOM.csv contains the mapping from the annotations (e.g. U1, R4, D3) to the component name, footprint, and value.
 
@@ -276,4 +279,4 @@ The BOM.csv contains the mapping from the annotations (e.g. U1, R4, D3) to the c
 
 The `.kicad_pcb` file can be opened by the popular open source PCB EDA software KiCAD. The routing can be done by the open source freerouting software automatically. The end board is manufacture-ready, and looks like this in KiCAD's 3D-viewer:
 
-![keyboard-3D](../../src/images/assets/demo-board-keyboard-3D.png)
+![keyboard-3D](../../../src/images/assets/demo-board-keyboard-3D.png)

@@ -1,16 +1,11 @@
----
-id: racket
-title: Racket Crash Course
-permalink: docs/racket.html
----
-
-# Racket Tutorial
+# Racket Crash Course
 
 This is a small guide to get you started on racket, so that you can comfortably
 programming in BHDL. You can always refer to the official racket guide and
 reference for full documents.
 
 ## Previous Writing
+
 There are three ways to run the code.
 
 First, you can run in command line. Run the top-level script:
@@ -41,4 +36,3 @@ via e.g.
 ;; assuming whole is defined as in the example scripts
 (Composite-pict whole)
 ```
-

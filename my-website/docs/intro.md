@@ -2,34 +2,32 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+<!-- BHDL: A Programming Language and System for making PCBs -->
 
-## Getting Started
+This is the index page of BHDL documents.
 
-Get started by **creating a new site**.
+BHDL is a programming language embedded in
+[racket](https://racket-lang.org/). In addition to the language, the system
+consists of a layout co-design system based on functional picture, REPL-driven
+interactive development and visualization, libraries, KiCAD compatible exporter,
+and placement engines including an optimization-based anlytical placer (ePlace)
+and simulated annealing based detailed placer.
 
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
+<!-- The online demo server can be found at https://lihebi.xyz. Currently it supports authorized users signing via GitHub OAuth. Contact us (at hebi@lihebi.com) for user account. -->
 
-## Generate a new site
+Documents:
 
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/getting-started.md` and edit some lines: the site **reloads automatically** and display your changes.
+- User Documents
+  - [Installation guide](docs/install)
+  - [Getting Started](docs/getting-started): this guide presents all you need to compose your circuit through an example keyboard circuit.
+  - [Component Library](docs/library): the official BHDL components library, and how to create your own library easily.
+  - [API reference](docs/api): the function APIs including
+    - the primary API, `make-circuit`
+    - three connection syntax, `*-` `*<` and `*=`
+    - layout API
+    - exporting API for KiCAD, PNG, PDF, BOM, etc.
+- Developer Documents
+  - [Advanced API reference](docs/advanced): this documents some advanced and internal APIs of BHDL.
+  - [Developer and system admin guide](docs/admin)

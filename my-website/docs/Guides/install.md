@@ -1,10 +1,4 @@
----
-id: install
-title: Installation
-permalink: docs/install.html
----
-
-# BHDL Installation Guide
+# Installation
 
 Warning: we are on pre-alpha release, please expect breaking changes in APIs.
 
