@@ -20,14 +20,14 @@ and simulated annealing based detailed placer.
 Documents:
 
 - User Documents
-  - [Installation guide](docs/install)
-  - [Getting Started](docs/getting-started): this guide presents all you need to compose your circuit through an example keyboard circuit.
-  - [Component Library](docs/library): the official BHDL components library, and how to create your own library easily.
-  - [API reference](docs/api): the function APIs including
+  - [Installation guide](guides/install)
+  - [Getting Started](guides/getting-started): this guide presents all you need to compose your circuit through an example keyboard circuit.
+  - [Component Library](reference/library): the official BHDL components library, and how to create your own library easily.
+  - [API reference](reference/api): the function APIs including
     - the primary API, `make-circuit`
     - three connection syntax, `*-` `*<` and `*=`
     - layout API
     - exporting API for KiCAD, PNG, PDF, BOM, etc.
 - Developer Documents
-  - [Advanced API reference](docs/advanced): this documents some advanced and internal APIs of BHDL.
-  - [Developer and system admin guide](docs/admin)
+  - [Extra API reference](reference/extra): this documents some advanced and internal APIs of BHDL.
+  - [System admin guide](reference/admin) for setting up jupyter hub server for your org
