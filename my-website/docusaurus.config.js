@@ -26,7 +26,7 @@ module.exports = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         { to: "/examples", label: "Examples", position: "left" },
-        { to: "/publication", label: "Publications", position: "left" },
+        { to: "/publications", label: "Publications", position: "left" },
         {
           href: "https://cloud.bhdl.org",
           label: "Cloud",
