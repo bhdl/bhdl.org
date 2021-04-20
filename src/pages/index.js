@@ -72,7 +72,7 @@ function HomepageHeader() {
 function FeatureBlock({ title }) {
   return (
     <Flex
-      bgColor="gray.100"
+      // bgColor="gray.100"
       p={5}
       boxShadow="xl"
       direction="column"
@@ -118,7 +118,7 @@ export default function Home() {
           description="A Programming Language and System for making PCBs"
         >
           <HomepageHeader />
-          <Center my={5}>
+          <Center my={5} color="black">
             <Alert maxW="xl" status="warning">
               <AlertIcon />
               This site is under construction, please check back later (soon!)
