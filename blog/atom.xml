@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bhdl.org/blog"/>
     <subtitle>BHDL.org Blog</subtitle>
-    <icon>https://bhdl.org/img/pcb.jpeg</icon>
+    <icon>https://bhdl.org/img/logo.jpeg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>
