@@ -1,4 +1,4 @@
-#lang s-exp bhdl/splicing
+#lang racket
 
 (require
  bhdl
@@ -76,16 +76,16 @@ key"
    [(= 0 spacing) #f]
    [else (make-circuit
           ;; FIXME user should not specify left and right
-          #:external-pins (left right)
-          #:vars ([d (1N4148W)]
+          (pin left right)
+          (part [d (1N4148W)]
 ;;                   [key (Cherry spacing)]
                   [key (kailh-socket spacing)])
-          #:connect (*- self.left key d self.right)
-          #:layout (vc-append
+          (wire (series self.left key d self.right))
+          (layout (vc-append
                     3
                     ;; add name to the key for visualization
                     (cc-superimpose key (pict:text name))
-                    d))]))
+                    d)))]))
 
 (define (make-half left-or-right col1 col2 col3 col4 col5 col6 col7)
   (let-values
@@ -94,15 +94,15 @@ key"
           [(left)  (values vr-append vl-append hb-append pi)]
           [(right) (values vl-append vr-append
                            (lambda (arg . args)
-                             (hb-append (reverse (cons arg args)) ..))
+                             (apply hb-append (reverse (cons arg args))))
                            (- pi))])])
     (let* ([padding (λ (unit)
                       (pict:ghost (pict:rectangle 10 unit)))])
-      (rotate (hb-append (vr-append col1 ..)
-                         (vr-append col2 .. (padding 30))
-                         (vr-append col3 .. (padding 60))
-                         (vr-append col4 .. (padding 80))
-                         (vr-append col5 .. (padding 60))
+      (rotate (hb-append (apply vr-append col1)
+                         (apply vr-append (append col2 (list (padding 30))))
+                         (apply vr-append (append col3 (list (padding 60))))
+                         (apply vr-append (append col4 (list (padding 80))))
+                         (apply vr-append (append col5 (list (padding 60))))
                          ;; col6
                          (match (list col6 col7)
                            [(list (list k5 t g b lspace) (list lmid1 lmid2))
@@ -117,14 +117,14 @@ key"
 (define (make-fitboard-layout matrix)
   "The layout of fitboard, give the matrix."
   (inset (hc-append -150
-                    (make-half 'left
+                    (apply make-half (append (list 'left)
                                (for/list ([i (range 7)])
                                  (keyboard-col matrix i))
-                               ..)
-                    (make-half 'right
+                               ))
+                    (apply make-half (append (list 'right)
                                (for/list ([i (reverse (range 7 14))])
                                  (keyboard-col matrix i))
-                               ..))
+                               )))
          -30 -30 -30 -50))
 
 (myvoid

@@ -9,3 +9,5 @@ fp-info-cache
 *.rules
 *.dsn
 *.ses
+
+*-checkpoint.*
