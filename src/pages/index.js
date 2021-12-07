@@ -16,6 +16,7 @@ import {
   Alert,
   AlertIcon,
   Image,
+  HStack,
 } from "@chakra-ui/react"
 
 function HomepageHeader() {
@@ -29,10 +30,16 @@ function HomepageHeader() {
       <div className="container">
         {/* <h1 className="hero__title">{siteConfig.title}</h1> */}
         {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
-        <Heading as="h1" mb={10} size="4xl">
-          {/* {siteConfig.title} */}
-          Board HDL
-        </Heading>
+        <Flex>
+          <HStack mb={10} mx="auto">
+            <Image src="/img/logo.jpeg" alt="alt" width="5rem" />
+            <Heading as="h1" size="4xl">
+              {/* {siteConfig.title} */}
+              Board HDL
+            </Heading>
+          </HStack>
+        </Flex>
+
         <Text fontSize="xl">{siteConfig.tagline}</Text>
 
         <Center>

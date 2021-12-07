@@ -1,0 +1,6 @@
+(circuit RC
+    (pin In Out GND)
+    (part [R1 (R In Out)]
+                                  [C1 (C Out GND)]
+)
+) ; end circuit

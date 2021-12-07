@@ -7,11 +7,15 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.jpeg",
   organizationName: "bhdl", // Usually your GitHub org/user name.
   projectName: "bhdl.org", // Usually your repo name.
   themeConfig: {
     hideableSidebar: true,
+    prism: {
+      theme: require("prism-react-renderer/themes/github"),
+      additionalLanguages: ["scheme", "racket"],
+    },
     gtag: {
       trackingID: "G-HC9ZP6PH1G",
     },
@@ -19,7 +23,7 @@ module.exports = {
       // title: "BHDL.org",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.png",
+        src: "img/logo.jpeg",
       },
       items: [
         {

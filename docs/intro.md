@@ -6,7 +6,11 @@ sidebar_position: 1
 
 <!-- BHDL: A Programming Language and System for making PCBs -->
 
-This is the index page of BHDL documents.
+<!-- This is the index page of BHDL documents. -->
+
+:::caution
+This site is under construction. A release will be available soon (expected Dec. 2021).
+:::
 
 BHDL is a programming language embedded in
 [racket](https://racket-lang.org/). In addition to the language, the system
