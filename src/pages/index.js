@@ -125,12 +125,12 @@ export default function Home() {
           description="A Programming Language and System for making PCBs"
         >
           <HomepageHeader />
-          <Center my={5} color="black">
+          {/* <Center my={5} color="black">
             <Alert maxW="xl" status="warning">
               <AlertIcon />
               This site is under construction, please check back later (soon!)
             </Alert>
-          </Center>
+          </Center> */}
 
           <main>
             <Box>

@@ -3,6 +3,10 @@
 
 # Getting Started
 
+:::caution
+This doc might be out-dated. Please see the [examples](/examples) for the most up-to-date syntax.
+:::
+
 <!-- ## A quick taste of BHDL -->
 
 ![A quick taste](../../static/img/taste.png)

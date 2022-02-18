@@ -8,9 +8,9 @@ sidebar_position: 1
 
 <!-- This is the index page of BHDL documents. -->
 
-:::caution
+<!-- :::caution
 This site is under construction. A release will be available soon (expected Dec. 2021).
-:::
+::: -->
 
 BHDL is a programming language embedded in
 [racket](https://racket-lang.org/). In addition to the language, the system

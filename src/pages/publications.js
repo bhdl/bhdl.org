@@ -43,9 +43,9 @@ export default function Publications() {
                   Automation Conference (DAC). IEEE, 2021.
                 </Text>
                 <Text>
-                  Youbiao He, and Forrest Sheng Bao. "Circuit routing using
-                  monte carlo tree search and deep neural networks." arXiv
-                  preprint arXiv:2006.13607 (2020).
+                  Youbiao He, Hebi Li, Forrest Bao and Jin Tian, "Circuit
+                  Routing Using Monte Carlo Tree Search and Deep Reinforcement
+                  Learning", published as a conference paper at VLSI-DAT 2022
                 </Text>
               </Flex>
             </Center>

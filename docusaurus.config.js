@@ -41,7 +41,7 @@ module.exports = {
         //   position: "right",
         // },
         {
-          href: "https://github.com/bhdl",
+          href: "https://github.com/bhdl/bhdl",
           label: "GitHub",
           position: "right",
         },
